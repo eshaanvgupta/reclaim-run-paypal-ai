@@ -5025,3 +5025,12 @@ td small {
     color: #333;
   }
 }
+
+/* Keep every inventory node reachable; the selected-sector callout stays below the map. */
+.warehouse-tooltip {
+  position: relative;
+  top: auto;
+  right: auto;
+  width: max-content;
+  margin: -52px 12px 38px auto;
+}

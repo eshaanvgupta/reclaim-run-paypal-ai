@@ -4,6 +4,8 @@ test('landing, interactive warehouse, search and product details', async ({ page
   page.on('pageerror', (e) => errors.push(e.message));
   await page.goto('/');
   await expect(page.getByRole('heading', { level: 1 })).toContainText('GOOD');
+  await page.getByRole('button', { name: 'Explore Organization', exact: true }).hover();
+  await expect(page.locator('.warehouse-tooltip')).toContainText('ORGANIZATION');
   await page.screenshot({ path: 'docs/screenshots/landing-desktop.png', fullPage: true });
   await page.getByRole('button', { name: 'Explore Audio', exact: true }).click();
   await expect(page).toHaveURL('/stock');
