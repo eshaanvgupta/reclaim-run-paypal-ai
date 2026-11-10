@@ -1,0 +1,31 @@
+:root {
+  --bg: #090b14;
+  --slate: #121926;
+  --orange: #ff7448;
+  --lime: #cfff52;
+  --cyan: #40e8ff;
+  --pink: #ff4fb2;
+  --cream: #f8f4e8;
+  --muted: #8d99ab;
+  --border: #283338;
+  --sans: 'Space Grotesk', sans-serif;
+  --mono: 'IBM Plex Mono', monospace;
+  --display: 'Bungee', sans-serif;
+  color-scheme: dark;
+}
+body {
+  overflow-x: clip;
+}
+.manifesto-clip {
+  overflow: hidden;
+  padding: 8px 0;
+}
+.cart-budget {
+  font-size: 10px;
+  color: var(--muted);
+  display: block;
+  margin: 18px 0;
+}
+.cart-budget input {
+  margin-top: 8px;
+}

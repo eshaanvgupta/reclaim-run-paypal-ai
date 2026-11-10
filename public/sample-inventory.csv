@@ -1,0 +1,2 @@
+sku,name,description,category,cost,retail,floor,stock,ageDays,quality,discountBps,marginBps,clearance,tags
+DEMO-NEW,Compact desk shelf,Synthetic demo shelf,Organization,1200,3500,2000,18,95,82,2000,2500,true,desk storage
