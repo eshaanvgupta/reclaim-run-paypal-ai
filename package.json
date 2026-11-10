@@ -1,0 +1,55 @@
+{
+  "name": "reclaim-run-paypal-ai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "setup": "tsx scripts/setup.ts",
+    "dev": "tsx server/index.ts",
+    "build": "tsc --noEmit && vite build",
+    "start": "tsx server/index.ts --production",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "ai:doctor": "tsx scripts/ai.ts",
+    "ai:setup": "tsx scripts/ai.ts --setup",
+    "verify:ai": "tsx scripts/verify-live.ts",
+    "verify:paypal": "tsx scripts/verify-live.ts --paypal",
+    "format": "prettier --write .",
+    "demo:record": "tsx scripts/record-demo.ts"
+  },
+  "dependencies": {
+    "@fontsource/bungee": "^5.2.7",
+    "@fontsource/ibm-plex-mono": "^5.2.7",
+    "@fontsource/space-grotesk": "^5.2.10",
+    "ag-grid-community": "^34.3.1",
+    "ag-grid-react": "^34.3.1",
+    "cookie-parser": "^1.4.7",
+    "csv-parse": "^7.0.3",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "ipaddr.js": "^2.5.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2",
+    "vitest": "^4.0.8"
+  }
+}
