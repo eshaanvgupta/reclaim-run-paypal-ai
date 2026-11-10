@@ -42,7 +42,7 @@ const chapters = [
   {
     start: 90,
     end: 112,
-    title: 'MERCHANT / ACTUAL RECORDS, ZERO FAKE SALES',
+    title: 'MERCHANT / INVENTORY, MARGINS & PAYMENT LEDGER',
     text: 'The merchant console manages inventory with AG Grid Community, validated imports, and approved discount boundaries. Recovery radar shows stock age and configured economics. The ledger reports zero sales because PayPal has not confirmed a capture. Real provider verification remains a clearly documented next step.',
   },
   {
